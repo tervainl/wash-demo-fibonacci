@@ -1,4 +1,4 @@
-import init, { fibonacci as fibonacci } from "../pkg/hello_wasm.js";
+import init, { fibonacci as fibonacci } from "./pkg/hello_wasm.js";
 
 
 const vm = new Vue( {

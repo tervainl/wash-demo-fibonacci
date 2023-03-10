@@ -1,9 +1,9 @@
-import init, { fibonacci as fibonacci } from "./pkg/hello_wasm.js";
+import init, { fibonacci as fibonacci } from "../pkg/hello_wasm.js";
 
 
 const vm = new Vue( {
     data: {
-        n: 43,
+        n: 41,
         ansJs: [],
         ansWasm: [],
         timeJs: 0,

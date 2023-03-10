@@ -1,0 +1,24 @@
+.container {
+    width: 1000px;
+    height: 150px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__left {
+        width: 450px;
+        height: 100px;
+        background-color: rgb(255, 207, 207);
+        font-weight: bold;
+        overflow-y: auto;
+    }
+
+    &__right {
+        width: 450px;
+        height: 100px;
+        background-color: rgb(187, 248, 254);
+        font-weight: bold;
+        overflow-y: auto;
+    }
+}

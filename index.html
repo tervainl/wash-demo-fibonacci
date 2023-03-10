@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" v-model="n">
+        <div class="container">
+            <div class="container__left">Javascript
+                <button v-on:click="runInJs">計算</button>
+                <span>{{timeJs}}s</span>
+                <div v-for="ans in ansJs">{{ans}}</div>
+            </div>
+            <div class="container__right">WebAssembly
+                <button v-on:click="runInWasm">計算</button>
+                <span>{{timeWasm}}s</span>
+                <div v-for="ans in ansWasm">{{ans}}</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="./app.js"></script>
+
+</html>

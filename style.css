@@ -1,0 +1,30 @@
+.container {
+  width: 1000px;
+  height: 150px;
+  background-color: #f0f0f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container__left {
+  width: 450px;
+  height: 100px;
+  background-color: #ffcfcf;
+  font-weight: bold;
+  overflow-y: auto;
+}
+
+.container__right {
+  width: 450px;
+  height: 100px;
+  background-color: #bbf8fe;
+  font-weight: bold;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=style.css.map */

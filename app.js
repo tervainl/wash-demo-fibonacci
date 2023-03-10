@@ -12,6 +12,9 @@ const vm = new Vue( {
     methods: {
         runInJs: runInJs,
         runInWasm: runInWasm,
+    },
+    mounted:function(){
+        init()
     }
 } );
 
@@ -36,8 +39,7 @@ function fibonacciJs( n ) {
     }
 }
 
-async function runInWasm() {
-    await init();
+function runInWasm() {
     const start = new Date();
     const ans = fibonacci( this.n );
     this.ansWasm.unshift( ans );
